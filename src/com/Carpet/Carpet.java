@@ -1,18 +1,18 @@
-package com.Karpet;
+package com.Carpet;
 
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Stack;
 import java.util.ArrayList;
 
-public class Karpet {
+public class Carpet {
     private boolean[][] field;// поле
     private ArrayList<ArrayList<Vector2>> clusters;
     private Stack<Vector2> stack;
     private ArrayList<Vector2> points;
 
 
-    private Karpet(int fieldSize) {
+    private Carpet(int fieldSize) {
         this.field = new boolean[fieldSize][fieldSize];
         for(int i = 0; i < fieldSize; i++) Arrays.fill(this.field[i], false);
         this.clusters = new ArrayList<>();
@@ -132,7 +132,7 @@ public class Karpet {
     public static void main(String[] args) {
         int size = 27;
         int iteration = 1; // iteration = log_3(size)
-        var kvr = new Karpet(size);
+        var kvr = new Carpet(size);
         kvr.paint(
                 iteration,
                 new Vector2(0, 0),

@@ -1,4 +1,4 @@
-package com.Karpet;
+package com.Carpet;
 
 public class Vector2 { // класс для двумерных целочисленных векторов
     int x;
